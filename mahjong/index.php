@@ -9,7 +9,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
     <title>苫小牧高専麻雀成績</title>
 </head>
 <body>
@@ -49,12 +50,6 @@
         <br>
         <input type="submit" id="button" name="button">
         
-        <?php
-            //if length of match is 半荘 , '$tonpu' is assignmented '1'.
-            //if length of match is 東風 , '$tonpu' is assignmented '2'.
-            $tonpu = 0;
-        ?>
-
     </form>
     <br><br>
     <h3>苫小牧高専麻雀順位</h3>
