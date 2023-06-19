@@ -1,6 +1,6 @@
 <?php
-    include 'set_db.php';
-    include 'all_point.php';
+    require 'set_db.php';
+    require 'all_point.php';
 ?>
 
 <!DOCTYPE html>
@@ -54,7 +54,7 @@
     <br><br>
     <h3>苫小牧高専麻雀順位</h3>
     <?php
-        include 'display_point.php';
+        require 'display_point.php';
     ?>
     <br>
     <br>
