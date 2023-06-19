@@ -21,7 +21,7 @@
                 $point_3 = ($score_3 - 40000)/1000/$tonpu;
                 $point_4 = ($score_4 - 60000)/1000/$tonpu;
 
-                if($point_1 + $point_2 + $point_3 + $point_4 != 0){
+                if($score_1 + $score_2 + $score_3 + $score_4 != 100000){
                     echo '点数が合いません。';
                     return 0;
                 }
@@ -59,7 +59,7 @@
                     $count_results_id = $row_results_id[0][0];
 
                     //user's input data assignment in results_table
-                    $sql = "INSERT INTO results_table (score_1 , score_2 , score_3 , score_4 , name_1 , name_2 , name_3 , name_4 , results_id) VALUES('$score_1','$score_2','$score_3','$score_4','$username_1','$username_2','$username_3','$username_4','$count_results_id');";
+                    $sql = "INSERT INTO results_table (score_1 , score_2 , score_3 , score_4 , name_1 , name_2 , name_3 , name_4 , results_id , game_length) VALUES('$score_1','$score_2','$score_3','$score_4','$username_1','$username_2','$username_3','$username_4','$count_results_id' , '$tonpuValue');";
                     $stmt = $pdo -> query($sql);
 
                     //user's ID assignment in user_id
