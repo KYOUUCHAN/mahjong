@@ -1,5 +1,8 @@
-<?php include('set_db.php') ?>
-<?php include('make_table.php') ?>
+<?php 
+    require 'radio.php' ;
+    require 'set_db.php' ;
+    require 'make_table.php'; 
+?>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -24,7 +27,6 @@
         echo '</table>';
         //for($i = 0 ; $i < )
         if($o == false){
-
             echo "error";
         }
     ?>
