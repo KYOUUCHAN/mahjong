@@ -58,6 +58,9 @@
     ?>
     <br>
     <br>
+    <?php
+        require 'hu_table.php';
+    ?>
     <br>
     <br>
     <br>
