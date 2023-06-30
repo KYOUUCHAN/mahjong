@@ -27,8 +27,6 @@
                 }
 
                 try{
-                    //connect MySQL to use POD
-                    $pdo = new PDO($dsn, $db['user'],$db['pass'],array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 
                     //make SQL sentence
                     $sql_1 = "SELECT * FROM user_table WHERE user_name = '$username_1';";
