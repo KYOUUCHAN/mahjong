@@ -92,7 +92,7 @@
                     }
 
 
-                    //assignment point to user_table
+                    //assignment point to sanma_user_table
                     $sql_addpoint_1 = "UPDATE sanma_user_table SET total_point = total_point + '$point_1' WHERE user_name = '$username_1';";
                     $stmt_addpoint_1 = $pdo -> query($sql_addpoint_1);
                     $sql_addpoint_2 = "UPDATE sanma_user_table SET total_point = total_point + '$point_2' WHERE user_name = '$username_2' ;";
