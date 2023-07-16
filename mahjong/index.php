@@ -48,6 +48,11 @@
         <input type = "radio" id="hantyan" name = "length_of_match" value = "HANTYAN">半荘
         <br>
         <br>
+        <input type = "radio" id="sanma" name = "number_of_people" value = "SANMA" required>三麻
+        <br>
+        <input type = "radio" id="yonma" name = "number_of_people" value = "YONMA">四麻
+        <br>
+        <br>
         <input type="submit" id="button" name="button">
         
     </form>
@@ -62,6 +67,9 @@
         require 'hu_table.php';
     ?>
     <br>
+    <?php
+        require 'hu_table.php';
+    ?>
     <br>
     <br>
 </body>
