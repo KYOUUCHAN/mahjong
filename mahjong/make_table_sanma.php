@@ -100,14 +100,6 @@
                     $sql_addpoint_3 = "UPDATE sanma_user_table SET total_point = total_point + '$point_3' WHERE user_name = '$username_3' ;";
                     $stmt_addpoint_3 = $pdo -> query($sql_addpoint_3);
 
-                    //make ranking table
-                    $sql_rank_table = "SELECT * FROM sanma_user_table ORDER BY total_point DESC;";
-                    $stmt_rank_table = $pdo -> query($sql_rank_table);
-                    $row_rank_table = $stmt_rank_table -> fetchAll();
-                    $count_table_name = array_column($row_rank_table , 'user_name');
-                    $count_table_point = array_column($row_rank_table , 'total_point');
-    
-
                 }catch(PDOException $e){
                     $errorMessage = 'error database';
                 }
