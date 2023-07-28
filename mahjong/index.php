@@ -58,11 +58,8 @@
         require 'hu_table.php';
     ?>
     <br>
-    <?php
-        require 'hu_table.php';
-    ?>
     <br>
-    <br>
+    <a href = 'test.php'>test<a>
     <?php
         require 'template/fooder.php';
     ?>
