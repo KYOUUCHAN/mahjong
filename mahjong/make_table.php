@@ -135,6 +135,6 @@
         if($errorMessage != ""){
             echo '<h1>'.$errorMessage.'<h1>';
             echo '<a href = "/.">再入力先<a>';
-            return 0;
+            return 1;
         }
 ?>
