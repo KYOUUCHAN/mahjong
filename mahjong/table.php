@@ -7,6 +7,8 @@
     else if($_POST['number_of_people'] == SANMA){
         require_once 'make_table_sanma.php'; 
     }
-    header('location: http://kyochan2.php.xdomain.jp/index.php');
-    exit("error");
+    if($errorMessage == ""){
+        header('location: http://kyochan2.php.xdomain.jp/index.php');
+    }
+    exit("<br>error");
 ?>
