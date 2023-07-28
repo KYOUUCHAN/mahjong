@@ -44,7 +44,7 @@
         <input type = "radio" id="yonma" name = "number_of_people" value = "YONMA">四麻
         <br>
         <br>
-        <input type="submit" id="button" name="button">
+        <input type="submit" id="button" name="button" value="送信">
         
     </form>
     <br><br>
