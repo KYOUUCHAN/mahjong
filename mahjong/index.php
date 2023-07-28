@@ -1,19 +1,10 @@
 <?php
     require 'set_db.php';
     require 'all_point.php';
+    require 'template/header.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="index.css">
-    <title>苫小牧高専麻雀成績</title>
-</head>
-<body>
+
     <h1 class="title">麻雀</h1>
     <h3>試合結果入力フォーム<h3>
     <form action="table.php" method="POST">
@@ -72,5 +63,6 @@
     ?>
     <br>
     <br>
-</body>
-</html>
+    <?php
+        require 'template/fooder.php';
+    ?>
