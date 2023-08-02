@@ -83,7 +83,7 @@
     }
     
     if($errorMessage != ""){
-        $sql_drop = "DROP TABLE `$new_table_name`;";
+        /* sql_drop = "DROP TABLE `$new_table_name`;";
         $pdo -> query($sql_drop);
         $sql_drop = "DROP TABLE `$new_table_name-yonma-resuluts`;";
         $pdo -> query($sql_drop);
@@ -92,7 +92,7 @@
         $sql_drop = "DROP TABLE `$new_table_name-yonma-users` ;";
         $pdo -> query($sql_drop);
         $sql_drop = "DROP TABLE `$new_table_name-sanma-users`;";
-        $pdo -> query($sql_drop);
+        $pdo -> query($sql_drop); */
         exit('<h1>'.$errorMessage.'<h1><br><a href = "test.php">再入力先<a>');
     }else{
         header('location: http://kyochan2.php.xdomain.jp/test.php');
